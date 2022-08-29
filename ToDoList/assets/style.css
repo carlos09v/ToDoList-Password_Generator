@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('./img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button {
+    background-color: #FDFDFD;
+    color: #102F5e;
+    border: 2px solid #102F5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: #102F5e;
+    color: white;
+}
+
+button:hover > i {
+    color: white;
+}
+
+button i {
+    color: #102F5e;
+    font-weight: bold;
+    pointer-events: none; /* Fazer com que o usuario clique no button e nao no i */
+}
+
+input, select {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #FDFDFD;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+main > h1 {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form p, #edit-form p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .3rem;
+}
+
+#cancel-btn {
+    margin-top: 1rem;
+}
+
+.toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+.toolbar h4 {
+    margin-bottom: .5rem;
+}
+
+#search {
+    border-right: 1px solid #DDD;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: .3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button {
+    margin-left: .4rem;
+}
+
+.done {
+    background-color: #395169;
+}
+
+.done h3 {
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
